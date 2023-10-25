@@ -82,6 +82,22 @@
                                                     <input type="file" class="form-control" name="gambar" id="gambar" accept=".jpg, .jpeg, .png, .webp" required value="<?= set_value('gambar'); ?>">
                                                 </div>
                                                 <div class="form-group col-md-6">
+                                                    <label>GAMBAR2</label>
+                                                    <input type="file" class="form-control" name="gambar2" id="gambar2" accept=".jpg, .jpeg, .png, .webp" required value="<?= set_value('gambar2'); ?>">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label>GAMBAR3</label>
+                                                    <input type="file" class="form-control" name="gambar3" id="gambar3" accept=".jpg, .jpeg, .png, .webp" required value="<?= set_value('gambar3'); ?>">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label>GAMBAR4</label>
+                                                    <input type="file" class="form-control" name="gambar4" id="gambar4" accept=".jpg, .jpeg, .png, .webp" required value="<?= set_value('gambar4'); ?>">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label>GAMBAR5</label>
+                                                    <input type="file" class="form-control" name="gambar5" id="gambar5" accept=".jpg, .jpeg, .png, .webp" required value="<?= set_value('gambar5'); ?>">
+                                                </div>
+                                                <div class="form-group col-md-6">
                                                     <label>DESKRIPSI</label>
                                                     <input type="text" class="form-control" name="deskripsi" placeholder="DESKRIPSI" required value="<?= set_value('deskripsi'); ?>">
                                                 </div>
@@ -157,6 +173,10 @@
                                     <th scope="col">NAMA KELAS</th>
                                     <th scope="col">HARGA</th>
                                     <th scope="col">GAMBAR</th>
+                                    <th scope="col">GAMBAR2</th>
+                                    <th scope="col">GAMBAR3</th>
+                                    <th scope="col">GAMBAR4</th>
+                                    <th scope="col">GAMBAR5</th>
                                     <th scope="col">DESKRIPSI</th>
                                     <th scope="col">ID_KATEGORI</th>
                                     <th scope="col">ID VARIASIPRODUK</th>
@@ -172,6 +192,19 @@
                                         <td>
                                             <img src="<?= base_url('gambarproduk/' . $row->gambar); ?>" alt="" width="100px" height="100px">
                                         </td>
+                                        <td>
+                                            <img src="<?= base_url('gambarproduk/' . $row->gambar2); ?>" alt="" width="100px" height="100px">
+                                        </td>
+                                        <td>
+                                            <img src="<?= base_url('gambarproduk/' . $row->gambar3); ?>" alt="" width="100px" height="100px">
+                                        </td>
+                                        <td>
+                                            <img src="<?= base_url('gambarproduk/' . $row->gambar4); ?>" alt="" width="100px" height="100px">
+                                            <td>
+                                            <img src="<?= base_url('gambarproduk/' . $row->gambar5); ?>" alt="" width="100px" height="100px">
+                                        </td>
+                                        </td>
+                                        v
                                         <td><?php echo $row->deskripsi ?></td>
                                         <td><?php echo $row->nama_kategori ?></td>
                                         <td><?php echo $row->nama_variasi ?></td>

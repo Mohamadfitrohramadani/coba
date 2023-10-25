@@ -30,6 +30,9 @@
         }, 5000);
     });
 </script>
+<body>
+    
+
 <div class="containerku">
     <div id="mySlider" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -56,6 +59,80 @@
 
 
 
+<div class="product-area pt-55 pb-25 pt-xs-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+            <h4>Kategori</h4>
+                <div class="image-grid">
+                    <div class="image-item">
+                        <a href="">
+                        <img src="<?= base_url()?>assets/imgkategori/bajupria.jpeg" alt="">
+                        <p>Nama Barang 1</p>
+                        </a>
+                    </div>
+                    <div class="image-item">
+                        <a href="">
+                        <img src="<?= base_url()?>assets/imgkategori/topi.jpeg" alt="">
+                        <p>Nama Barang 2</p>
+                        </a>
+                    </div>
+                    <div class="image-item">
+                        <a href="">
+                        <img src="<?= base_url()?>assets/imgkategori/sepatu.jpeg" alt="">
+                        <p>Nama Barang 3</p>
+                        </a>
+                    </div>
+                    <div class="image-item">
+                        <a href="">
+                        <img src="<?= base_url()?>assets/imgkategori/celana.jpeg" alt="">
+                        <p>Nama Barang 4</p>
+                        </a>
+                    </div>
+                    <div class="image-item">
+                        <a href="">
+                        <img src="<?= base_url()?>assets/imgkategori/topi.jpeg" alt="">
+                        <p>Nama Barang 5</p>
+                        </a>
+                    </div>
+                    <div class="image-item">
+                        <a href="">
+                        <img src="<?= base_url()?>assets/imgkategori/topi.jpeg" alt="">
+                        <p>Nama Barang 6</p>
+                        </a>
+                    </div>
+                    <div class="image-item">
+                        <a href="">
+                        <img src="<?= base_url()?>assets/imgkategori/topi.jpeg" alt="">
+                        <p>Nama Barang 7</p>
+                        </a>
+                    </div>
+                    <div class="image-item">
+                        <a href="">
+                        <img src="<?= base_url()?>assets/imgkategori/bajupria.jpeg" alt="">
+                        <p>Nama Barang 1</p>
+                        </a>
+                    </div>
+                    <div class="image-item">
+                        <a href="">
+                        <img src="<?= base_url()?>assets/imgkategori/topi.jpeg" alt="">
+                        <p>Nama Barang 2</p>
+                        </a>
+                    </div>
+                    <div class="image-item">
+                        <a href="">
+                        <img src="<?= base_url()?>assets/imgkategori/sepatu.jpeg" alt="">
+                        <p>Nama Barang 3</p>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 
 
@@ -76,6 +153,7 @@
         </div>
     </div>
 </div>
+
 
 
 <div class="product-area pt-55 pb-25 pt-xs-50">

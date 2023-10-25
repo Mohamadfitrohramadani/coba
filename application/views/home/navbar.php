@@ -10,29 +10,6 @@
             <div class="header-top">
                 <div class="container">
                     <div class="row">
-                        <!-- Begin Header Top Left Area -->
-                        <div class="col-lg-3 col-md-4">
-                            <div class="header-top-left">
-                                <ul class="phone-wrap">
-                                    <?php if ($this->session->userdata('role_id') == 2) : ?>
-                                        <?php
-                                        $user_id = $this->session->userdata('user_id');
-                                        $this->db->where('id', $user_id); // Menggunakan kolom "id" sebagai pengenal pengguna
-                                        $query = $this->db->get('tbl_user');
-
-                                        if ($query->num_rows() > 0) {
-                                            $user = $query->row();
-                                            echo '<li><span>Selamat datang, ' . $user->nama . '</span></li>';
-                                        }
-                                        ?>
-                                    <?php else : ?>
-                                        <li><span>Belum Login</span></li>
-                                    <?php endif; ?>
-                                </ul>
-
-                            </div>
-                        </div>
-                        <!-- Header Top Left Area End Here -->
                         <!-- Begin Header Top Right Area -->
                         <div class="col-lg-9 col-md-8">
                             <div class="header-top-right">
@@ -54,15 +31,15 @@
                     <div class="row">
                         <!-- Begin Header Logo Area -->
                         <div class="col-lg-3">
-                            <div class="logo pb-sm-30 pb-xs-50">
+                                                   <div class="logo pb-sm-30 pb-xs-50" style="width: 200px; height: 100px;">
                                 <a href="<?= base_url('home') ?>">
-                                    <img src="<?= base_url() ?>assets/gambar_icon/icon3.png" alt="">
+                                    <img src="<?= base_url() ?>assets/gambar_icon/icon33.png" alt="" style="width: 100%; height: 100%;">
                                 </a>
                             </div>
                         </div>
                         <!-- Header Logo Area End Here -->
                         <!-- Begin Header Middle Right Area -->
-                        <div class="col-lg-9 pl-0 ml-sm-15 ml-xs-15">
+                        <div class="col-lg-9 pl-0 ml-sm-15 ml-xs-15" style="margin-top:20px;">
                             <!-- Begin Header Middle Searchbox Area -->
                             <form action="<?= base_url('home/search') ?>" method="get" class="hm-searchbox">
                                 <input type="text" name="keyword" placeholder="Enter your search key ...">
@@ -125,10 +102,16 @@
                                             </div>
                                         </div>
                                     </li>
+                                    
                                     <!-- Header Mini Cart Area End Here -->
                                 </ul>
+                            <div class="info">
+                              <?= $this->session->userdata('email')?>
+                            </div>
+                        <!-- Header Top Left Area End Here -->
                             </div>
                             <!-- Header Middle Right Area End Here -->
+                            
                         </div>
                         <!-- Header Middle Right Area End Here -->
                     </div>
@@ -141,7 +124,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <!-- Begin Header Bottom Menu Area -->
-                            <div class="hb-menu">
+                            <!-- <div class="hb-menu">
                                 <nav>
                                     <ul>
                                         <li><a href="<?= base_url('home/kartun') ?>">KAOS KARTUN</a></li>
@@ -154,7 +137,7 @@
                                         <li><a href="<?= base_url('home/distro') ?>">KAOS DISTRO</a></li>
                                     </ul>
                                 </nav>
-                            </div>
+                            </div> -->
                             <!-- Header Bottom Menu Area End Here -->
                         </div>
                     </div>

@@ -56,6 +56,7 @@ class Login extends CI_Controller
 
         $user = $this->m_user->get_user_by_email($email);
 
+
         if ($user) {
             if (password_verify($password, $user->password)) {
                 $data = [
